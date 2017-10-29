@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Example",
+		"_postman_id": "2680e384-4349-833e-e020-999d5f98a719",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/employees-work-day",
+			"request": {
+				"url": {
+					"raw": "http://examle.dev/api/employees-work-day?current​​_date=01.01.2017&n=3",
+					"protocol": "http",
+					"host": [
+						"examle",
+						"dev"
+					],
+					"path": [
+						"api",
+						"employees-work-day"
+					],
+					"query": [
+						{
+							"key": "current​​_date",
+							"value": "01.01.2017",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "n",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/employees-work-day",
+			"request": {
+				"url": "http://examle.dev/api/employees-work-day",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\"day_id\": 1, \"user_id\": 1, \"start\":\"10:01\",\"end\":\"20:01\"},\n\t{\"day_id\": 1, \"user_id\": 1, \"start\":\"10:02\",\"end\":\"20:02\"},\n\t{\"day_id\": 3, \"user_id\": 3, \"start\":\"10:03\",\"end\":\"20:03\"}\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
